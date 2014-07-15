@@ -16,24 +16,25 @@ http://www.colourlovers.com/palette/1317408/Drifting_through
     #title {
         display: none !important;
     }
-    #nav-content{
+
+    #nav-content {
         display: none !important;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    #mob-title{
+    #mob-title {
         display: block !important;
     }
 }
+
 html, body {
     height: 100%;
 }
 
 ul {
-    list-style-type:none;
+    list-style-type: none;
 }
-
 
 #title {
     padding: 10px 0 10px 0;
@@ -85,7 +86,7 @@ text {
 
 .content {
     max-width: 1200px;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     font-size: 1.25em;
 }
@@ -113,7 +114,7 @@ text {
     text-align: center;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -186,7 +187,7 @@ footer {
     max-width: 100%;
 }
 
-#mob-title{
+#mob-title {
     background-color: #3D4F5D;
     display: none;
     border-bottom: 3px solid #631B33;
@@ -231,7 +232,7 @@ footer {
 
 #info {
     padding: 30px;
-    color: whitesmoke !important;
+    /*color: whitesmoke !important;*/
     font-size: 1.25em;
 }
 
@@ -241,12 +242,15 @@ footer {
 }
 
 #portrait {
-    padding: 30px;
+    padding: 30px 30px 0 30px;
+    margin-bottom: -1px;
 }
 
 #landing {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: auto;
+    background-color: white;
+    margin-top: 40px;
 }
 
 .pure-menu li a:hover, .pure-menu li a:focus {
@@ -270,7 +274,7 @@ footer {
     height: 100%;
 }
 
-.pure-menu li{
+.pure-menu li {
     height: 100%;
 }
 
@@ -289,6 +293,7 @@ footer {
     max-width: 100%;
     background-color: #3D4F5D;
     border-bottom: solid 4px #631B33;
+    z-index: 5;
 }
 
 path {
@@ -302,7 +307,7 @@ path {
     color: #565656;
 }
 
-.info-text > p > a{
+.info-text > p > a {
     color: #3B8BBA;
     text-decoration: none;
 }
@@ -338,6 +343,7 @@ path {
     overflow-y: hidden;
     overflow: hidden;
 }
+
 #menu > ul > li {
     padding: 0 10px 0 10px !important;
     border-bottom: 3px solid #631B33;
@@ -359,7 +365,31 @@ path {
     text-align: center;
     padding: 10px;
 }
-#menuLink > span{
+
+#menuLink > span {
     font-family: "Amatic SC", Sans-serif;
     font-weight: bolder;
+}
+
+.res-heading {
+    margin-bottom: 0 !important;
+}
+
+ul.info-text {
+    margin-top: 0 !important;
+}
+
+#pdf-download {
+    right: 0;
+    position: absolute;
+    margin: 10px 0 0 0;
+    padding: 10px 20px 10px 5px;
+    background-color: #3D4F5D;
+    z-index: 0;
+}
+
+#pdf-download span{
+    font-family: "Amatic SC", cursive;
+    color: whitesmoke;
+    font-size: 2em;
 }

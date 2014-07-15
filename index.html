@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon"
+          type="image/png"
+          href="img/fav.png">
     <!--CSS-->
     <link rel="stylesheet" href="css/pure.css"/>
     <link rel="stylesheet" href="css/grids-responsive.css"/>
@@ -45,19 +48,19 @@
         </li>
         <li><span class="mob-nav-text resume-button"><a href="javascript:void(0)">Resum&#xE9;</a></span></li>
         <li><span class="mob-nav-text"><a href="http://github.com/demoore">GitHub</a></span></li>
-        <li id="bottom"><span class="mob-nav-text"><a href="http://zardoz.svbtle.com">Blog </a></span></li>
+        <li id="bottom"><span class="mob-nav-text"><a href="http://blog.dylanem.ca">Blog </a></span></li>
     </ul>
 </div>
 <div class="pure-g resize" id="title">
     <div class="pure-g" id="landing">
         <div class="pure-u-2-5">
             <div id="portrait">
-                <img src="http://www.placecage.com/c/400/400" class="pure-img" alt=""/>
+                <img src="img/dylan.png" class="pure-img" alt="It's-a me!"/>
             </div>
         </div>
         <div class="pure-u-2-5">
             <div id="info" class="info-text">
-                <h1 style="color: whitesmoke;">Greetings,</h1>
+                <h1>Greetings,</h1>
 
                 <p>Welcome to the personal site of me, Dylan Moore. I'm a developer specializing in web-based solutions. I
                     hail from Port McNeill, BC but now live in Victoria, British Columbia. <br/> <br/> Check out what I'm working on
@@ -97,7 +100,7 @@
 </div>
 
 <footer>
-    <p style="float: right;">Copyright Dylan Moore</p>
+    <p style="float: right; margin-right: 30px;">Copyright Dylan Moore</p>
 </footer>
 <script>
 
@@ -148,24 +151,6 @@
             pipeline = false;
         });
 
-        var topPadding = $("#nav-content").height();
-
-        $(window).bind('scroll', function () {
-            var num;
-            if (!toggled) {
-                num = $("#title").height() + 10;
-            } else {
-                num = -1;
-                $("#content").css("padding-top", $("#nav-content").height());
-            }
-            if ($(window).scrollTop() > num) {
-                $('#nav-content').addClass('fixed');
-                $("#title").css("padding-top", topPadding);
-            } else {
-                $('#nav-content').removeClass('fixed');
-                $("#title").css("padding-top", 0);
-            }
-        });
 
         var slide = true;
         $("#menuLink").click(function () {
