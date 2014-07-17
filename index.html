@@ -44,7 +44,7 @@
     <ul>
         <li><span class="mob-nav-text mini-nav-name"><a href="javascript:void(0)">Dylan</a></span>
         </li>
-        <li><span class="mob-nav-text resume-button"><a href="javascript:void(0)">Resum&#xE9;</a></span></li>
+        <li><span class="mob-nav-text resume-button"><a href="javascript:void(0)">R&#xE9;sum&#xE9;</a></span></li>
         <li><span class="mob-nav-text"><a href="http://github.com/demoore">GitHub</a></span></li>
         <li id="bottom"><span class="mob-nav-text"><a href="http://blog.dylanem.ca">Blog </a></span></li>
     </ul>
@@ -60,9 +60,9 @@
             <div id="info" class="info-text">
                 <h1>Greetings,</h1>
 
-                <p>Welcome to the personal site of me, Dylan Moore. I'm a developer specializing in web-based solutions. I
-                    hail from Port McNeill, BC but now live in Victoria, British Columbia. <br/> <br/> Check out what I'm working on
-                    below.</p>
+                <p>Welcome to the personal site of me, Dylan Moore. I'm a developer specializing in web-based solutions.
+                    I hail from Port McNeill, BC but now live in Victoria, British Columbia. <br/> <br/> Check out what
+                    I'm working on below.</p>
             </div>
         </div>
     </div>
@@ -72,10 +72,9 @@
     <div class="pure-u-1">
         <div class="info-text" id="mob-title-text">
             <h1 style="color: whitesmoke;">Greetings,</h1>
-
             <p>Welcome to the personal site of me, Dylan Moore. I'm a developer specializing in web-based solutions. I
-                hail from Port McNeill, BC but now live in Victoria, British Columbia.  <br/> <br/> Check out what I'm working on
-                below.</p>
+                hail from Port McNeill, BC but now live in Victoria, British Columbia. <br/> <br/> Check out what I'm
+                working on below.</p>
         </div>
     </div>
 </div>
@@ -86,7 +85,7 @@
             <ul>
                 <li><span class="min-nav-text mini-nav-name"><a href="javascript:void(0)">Dylan Moore</a></span>
                 </li>
-                <li><span class="min-nav-text resume-button"><a href="javascript:void(0)">Resum&#xE9;</a></span></li>
+                <li><span class="min-nav-text resume-button"><a href="javascript:void(0)">R&#xE9;sum&#xE9;</a></span></li>
                 <li><span class="min-nav-text"><a href="http://github.com/demoore">GitHub</a></span></li>
                 <li><span class="min-nav-text"><a href="http://blog.dylanem.ca">Blog </a></span></li>
             </ul>
@@ -148,19 +147,10 @@
             pipeline = false;
         });
 
-
-        var slide = true;
         $("#menuLink").click(function () {
-            if (slide) {
-                $("#menuLink").animate({left: "160px"});
-                $("#menu").animate({left: "160px"});
-                slide = false;
-            } else {
-                $("#menuLink").animate({left: "0"});
-                $("#menu").animate({left: "0"});
-                slide = true;
-            }
-        })
+            $("#menuLink").animate({left: "160px"}).delay(3000).animate({left: "0"});
+            $("#menu").animate({left: "160px"}).delay(3000).animate({left: "0"});
+        });
     });
 </script>
 </body>
